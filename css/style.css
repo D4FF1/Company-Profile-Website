@@ -7,20 +7,46 @@ body {
   padding: 0.8rem 1rem;
 }
 
-.navbar a {
+/* Navbar Links */
+.navbar .nav-link {
+  position: relative;
   color: #fff !important;
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 5px 0;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
-.navbar a:hover {
-  color: #ffe082 !important;
+/* Hover underline animation */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffe082;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link */
+.navbar .nav-link.active {
+  font-weight: 700; /* lebih tebal */
+}
+
+.navbar .nav-link.active::after {
+  width: 100%; /* underline selalu muncul */
+  background-color: #fff; /* underline aktif beda warna */
 }
 
 .navbar-brand {
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 1px;
+  color: white;
 }
 
 .section-bg-light {
