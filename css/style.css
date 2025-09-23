@@ -127,6 +127,9 @@ body {
   padding: 12px 30px;
   font-weight: 600;
   transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.6s;
 }
 
 .hero .btn:hover {
@@ -335,14 +338,36 @@ body {
   }
 }
 
-/* Animasi fade-up */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s ease-out;
+/* Animasi Fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
+/* Animasi Slide-in dari kiri */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Terapkan ke Hero Section */
+.hero h1 {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hero p {
+  animation: slideInLeft 1.2s ease-out forwards;
+  animation-delay: 0.3s; /* sedikit jeda biar lebih smooth */
 }
