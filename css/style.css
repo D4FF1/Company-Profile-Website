@@ -350,6 +350,14 @@ body {
   }
 }
 
+/* Terapkan ke form */
+form {
+  opacity: 0; /* agar tidak langsung muncul */
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s; /* bisa diubah sesuai kebutuhan */
+}
+
+
 /* Animasi Slide-in dari kiri */
 @keyframes slideInLeft {
   from {
