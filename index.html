@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DesainCoding.id - Jasa Desain & Website Profesional untuk UMKM dan Startup">
+  <meta name="keywords" content="website, desain, coding, company profile, branding, digital marketing">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link 
@@ -16,52 +18,122 @@
     crossorigin="anonymous"
   />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 
-  <title>Company Profile</title>
+  <title>DesainCoding.id - Jasa Desain & Website Profesional</title>
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar fixed-top">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="logo" class="navbar-brand">TechNova</a>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand fw-bold d-flex align-items-center">
+        <i class="bi bi-code-square me-2"></i>
+        DesainCoding.id
+      </a>
+      
+      <!-- Mobile Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-list"></i>
+      </button>
 
-      <ul class="nav-links d-flex list-unstyled mb-0">
-        <li class="mx-2"><a href="#hero" class="nav-link active">Beranda</a></li>
-        <li class="mx-2"><a href="#about" class="nav-link">Tentang Kami</a></li>
-        <li class="mx-2"><a href="#team" class="nav-link">Tim Kami</a></li>
-        <li class="mx-2"><a href="#services" class="nav-link">Layanan</a></li>
-        <li class="mx-2"><a href="#contact" class="nav-link">Kontak</a></li>
-      </ul>
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2">
+            <a href="#hero" class="nav-link active d-flex align-items-center">
+              <i class="bi bi-house me-1"></i>
+              Beranda
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#about" class="nav-link d-flex align-items-center">
+              <i class="bi bi-info-circle me-1"></i>
+              Tentang Kami
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#team" class="nav-link d-flex align-items-center">
+              <i class="bi bi-people me-1"></i>
+              Tim
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#services" class="nav-link d-flex align-items-center">
+              <i class="bi bi-briefcase me-1"></i>
+              Layanan
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#contact" class="nav-link d-flex align-items-center">
+              <i class="bi bi-telephone me-1"></i>
+              Kontak
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero d-flex align-items-center mt-lg-5">
+  <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         
-        <!-- Bagian Teks -->
-        <div class="col-lg-6 d-flex flex-column justify-content-center ">
-          <h1 class="mb-3">Bangun Masa Depan Digital Bersama TechNova</h1>
-          <p class="mb-4">
-            Kami menyediakan layanan teknologi inovatif untuk membantu bisnis Anda berkembang. 
-            Dari pembuatan website, aplikasi mobile, hingga strategi digital yang efektif.
+        <!-- Text Content -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+          <h1 class="display-4 fw-bold mb-4">Bangun Website & Desain Profesional</h1>
+          <p class="lead mb-4">
+            DesainCoding.id membantu UMKM, startup, hingga personal brand untuk memiliki website modern,
+            company profile digital, dan desain visual yang menarik agar bisnis Anda semakin dipercaya.
           </p>
-          <a href="#about" class="btn btn-primary btn-lg">Pelajari Lebih Lanjut</a>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#about" class="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center">
+              <i class="bi bi-rocket-takeoff me-2"></i>
+              Jelajahi Layanan
+            </a>
+            <a href="#contact" class="btn btn-outline-primary btn-lg px-4 py-2 d-flex align-items-center">
+              <i class="bi bi-chat-dots me-2"></i>
+              Konsultasi Gratis
+            </a>
+          </div>
+          <div class="mt-4 d-flex flex-wrap gap-4">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <span>Desain Modern</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <span>Responsive</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-check-circle-fill text-primary me-2"></i>
+              <span>Harga Terjangkau</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Bagian Gambar -->
-        <div class="col-lg-6 hero-img">
-          <img 
-            src="img/shiny-night-city.jpg" 
-            class="img-fluid" 
-            alt="Hero Image" 
-            style="border-radius: 9px;"
-          >
+        <!-- Image Content -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="hero-image-wrapper">
+            <img 
+              src="img/shiny-night-city.jpg" 
+              class="img-fluid rounded-3 shadow-lg" 
+              alt="Website Development" 
+              onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'"
+            >
+            <div class="floating-element element-1">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <div class="floating-element element-2">
+              <i class="bi bi-palette"></i>
+            </div>
+            <div class="floating-element element-3">
+              <i class="bi bi-rocket"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -70,29 +142,91 @@
   <!-- ABOUT US SECTION -->
   <section id="about" class="about py-5">
     <div class="container">
-      <!-- Judul Section -->
-      <h2 class="section-title text-center mb-5">Tentang Kami</h2>
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">
+        <i class="bi bi-info-circle me-3"></i>
+        Tentang DesainCoding.id
+      </h2>
       <div class="row align-items-center">
         
-        <!-- Kolom Gambar -->
-        <div class="col-md-6 text-center mb-4 mb-md-5">
-          <img
-            src="img/project-team-collaborating-business-analytics.jpg"
-            alt="Tentang Kami"
-            class="img-fluid rounded shadow"
-          >
+        <!-- Image Column -->
+        <div class="col-lg-6 mb-5" data-aos="fade-right">
+          <div class="about-image-wrapper text-center">
+            <img
+              src="img/Logo Bisnis 3.png"
+              alt="Tentang Kami"
+              class="img-fluid rounded-3 shadow"
+              onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'"
+            >
+          </div>
         </div>
 
-        <!-- Kolom Teks -->
-        <div class="col-md-6">
-          <h3 class="mb-3">Siapa Kami?</h3>
-          <p class="mb-3">
-            TechNova adalah perusahaan teknologi yang berfokus pada pengembangan solusi digital modern, inovatif, dan berkelanjutan.
+        <!-- Text Column -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+          <h3 class="mb-4 fw-bold d-flex align-items-center">
+            <i class="bi bi-question-circle me-3"></i>
+            Siapa Kami?
+          </h3>
+          <p class="mb-4 fs-5">
+            DesainCoding.id adalah tim kreatif muda yang berfokus pada pengembangan
+            website modern, desain UI/UX, dan strategi branding digital.
           </p>
           <p class="mb-4">
-            Kami membantu bisnis tumbuh melalui layanan pembuatan website, aplikasi, dan konsultasi IT profesional dengan dukungan tim ahli yang berdedikasi.
+            Kami percaya setiap bisnis berhak tampil profesional secara online.
+            Dengan kombinasi desain estetik dan teknologi terkini, kami siap membantu
+            Anda membangun citra digital yang kuat.
           </p>
-          <a href="#services" class="btn btn-about">Pelajari Layanan Kami</a>
+          
+          <div class="row mb-4">
+            <div class="col-sm-6 mb-3">
+              <div class="d-flex align-items-center p-3 bg-light rounded">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-lightning-charge-fill text-primary fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Cepat & Efisien</h6>
+                  <small class="text-muted">Proses pengerjaan cepat</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="d-flex align-items-center p-3 bg-light rounded">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-shield-check text-primary fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Terpercaya</h6>
+                  <small class="text-muted">Kualitas terjamin</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="d-flex align-items-center p-3 bg-light rounded">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-star-fill text-primary fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Berkualitas</h6>
+                  <small class="text-muted">Hasil premium</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="d-flex align-items-center p-3 bg-light rounded">
+                <div class="feature-icon me-3">
+                  <i class="bi bi-headset text-primary fs-4"></i>
+                </div>
+                <div>
+                  <h6 class="fw-bold mb-1">Support 24/7</h6>
+                  <small class="text-muted">Bantuan penuh</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <a href="#services" class="btn btn-about btn-lg d-flex align-items-center w-fit">
+            <i class="bi bi-briefcase me-2"></i>
+            Pelajari Layanan
+          </a>
         </div>
       </div>
     </div>
@@ -101,50 +235,110 @@
   <!-- OUR TEAM SECTION -->
   <section id="team" class="team py-5 bg-light">
     <div class="container">
-      <h2 class="section-title text-center mb-5">Our Team</h2>
-      <div class="row g-4">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">
+        <i class="bi bi-people me-3"></i>
+        Tim DesainCoding.id
+      </h2>
+      <p class="text-center text-muted mb-5 fs-5" data-aos="fade-up" data-aos-delay="100">
+        Bertemu dengan tim profesional kami yang siap mewujudkan ide digital Anda
+      </p>
+      <div class="row g-4 justify-content-center">
         
         <!-- Team Member 1 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card team-card shadow-sm text-center">
-            <img 
-              src="img/2.jpg"
-              class="team-img rounded-circle mx-auto mt-4" 
-              alt="Team Member 1"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Daffi Nafeeza</h5>
-              <p class="card-text text-muted">Owner</p>
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card team-card shadow-sm text-center h-100">
+            <div class="card-body p-4">
+              <img 
+                src="img/2.jpg"
+                class="team-img" 
+                alt="Daffi Nafeeza"
+                onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'"
+              />
+              <h5 class="card-title mt-4 mb-1">Daffi Nafeeza</h5>
+              <p class="card-text text-primary fw-semibold mb-3">
+                <i class="bi bi-gear me-1"></i>
+                Founder & Web Developer
+              </p>
+              <p class="text-muted small mb-4">
+                Berpengalaman dalam pengembangan website modern dan sistem backend yang scalable.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="text-muted me-3 p-2 rounded bg-light">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" class="text-muted me-3 p-2 rounded bg-light">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" class="text-muted p-2 rounded bg-light">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Team Member 2 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card team-card shadow-sm text-center">
-            <img 
-              src="img/Roisul.jpg"
-              class="team-img rounded-circle mx-auto mt-4" 
-              alt="Team Member 2"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Roisul Hikam</h5>
-              <p class="card-text text-muted">Friend</p>
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card team-card shadow-sm text-center h-100">
+            <div class="card-body p-4">
+              <img 
+                src="img/roisul.jpg"
+                class="team-img" 
+                alt="Roisul Hikam"
+                onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'"
+              />
+              <h5 class="card-title mt-4 mb-1">Roisul Hikam</h5>
+              <p class="card-text text-primary fw-semibold mb-3">
+                <i class="bi bi-stack me-1"></i>
+                Full Stack Developer
+              </p>
+              <p class="text-muted small mb-4">
+                Ahli dalam frontend dan backend development dengan fokus pada user experience.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="text-muted me-3 p-2 rounded bg-light">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" class="text-muted me-3 p-2 rounded bg-light">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" class="text-muted p-2 rounded bg-light">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Team Member 3 -->
-        <div class="col-md-4 col-sm-6">
-          <div class="card team-card shadow-sm text-center">
-            <img 
-              src="img/Davin.jpg"
-              class="team-img rounded-circle mx-auto mt-4" 
-              alt="Team Member 3"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Davin Kurniawan</h5>
-              <p class="card-text text-muted">Friend</p>
+        <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card team-card shadow-sm text-center h-100">
+            <div class="card-body p-4">
+              <img 
+                src="img/462577165_622720313520561_5777454014785996098_n.jpg"
+                class="team-img" 
+                alt="M. Rizky Suryapratama"
+                onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80'"
+              />
+              <h5 class="card-title mt-4 mb-1">M. Rizky Suryapratama</h5>
+              <p class="card-text text-primary fw-semibold mb-3">
+                <i class="bi bi-display me-1"></i>
+                Frontend Developer
+              </p>
+              <p class="text-muted small mb-4">
+                Spesialis dalam membuat interface yang menarik dan responsive untuk semua device.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="text-muted me-3 p-2 rounded bg-light">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="#" class="text-muted me-3 p-2 rounded bg-light">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="#" class="text-muted p-2 rounded bg-light">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -154,55 +348,118 @@
   </section>
 
   <!-- SERVICES SECTION -->
-  <section id="services" class="py-5 section-bg-gray">
+  <section id="services" class="services py-5">
     <div class="container">
-      <!-- Judul Section -->
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Our Services</h2>
-        <p class="text-muted">
-          Kami menyediakan layanan terbaik untuk membantu kebutuhan Anda.
+      <!-- Section Header -->
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title mb-3">
+          <i class="bi bi-briefcase me-3"></i>
+          Layanan Kami
+        </h2>
+        <p class="lead text-muted fs-5">
+          Solusi digital lengkap untuk mendukung bisnis dan personal branding Anda
         </p>
       </div>
 
-      <!-- Baris Card Layanan -->
+      <!-- Services Grid -->
       <div class="row g-4">
         
         <!-- Service 1 -->
-        <div class="col-md-4">
-          <div class="card service-card h-100 text-center p-4 shadow-sm">
-            <div class="icon mb-3">
-              <i class="bi bi-laptop fs-1 text-primary"></i>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="card service-card h-100 text-center p-4 shadow-sm border-0">
+            <div class="icon mb-4">
+              <div class="icon-wrapper bg-primary">
+                <i class="bi bi-laptop fs-2"></i>
+              </div>
             </div>
-            <h5 class="fw-bold">Web Development</h5>
-            <p class="text-muted">
-              Membuat website modern, responsif, dan sesuai kebutuhan bisnis Anda.
+            <h5 class="fw-bold mb-3">Website Company Profile</h5>
+            <p class="text-muted mb-4">
+              Website profesional yang elegan dan responsif untuk memperkuat citra bisnis Anda di dunia digital.
             </p>
+            <ul class="list-unstyled mt-3 text-start">
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Desain modern & responsive</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Optimasi SEO</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Fast loading</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Mobile friendly</span>
+              </li>
+            </ul>
           </div>
         </div>
 
         <!-- Service 2 -->
-        <div class="col-md-4">
-          <div class="card service-card h-100 text-center p-4 shadow-sm">
-            <div class="icon mb-3">
-              <i class="bi bi-phone fs-1 text-success"></i>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="card service-card h-100 text-center p-4 shadow-sm border-0">
+            <div class="icon mb-4">
+              <div class="icon-wrapper bg-success">
+                <i class="bi bi-brush fs-2"></i>
+              </div>
             </div>
-            <h5 class="fw-bold">Mobile Apps</h5>
-            <p class="text-muted">
-              Mengembangkan aplikasi mobile Android dan iOS dengan performa tinggi.
+            <h5 class="fw-bold mb-3">Desain Branding</h5>
+            <p class="text-muted mb-4">
+              Logo, UI/UX, hingga desain sosial media untuk mendukung identitas digital yang konsisten.
             </p>
+            <ul class="list-unstyled mt-3 text-start">
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Logo design</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>UI/UX design</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Social media kit</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Brand guideline</span>
+              </li>
+            </ul>
           </div>
         </div>
 
         <!-- Service 3 -->
-        <div class="col-md-4">
-          <div class="card service-card h-100 text-center p-4 shadow-sm">
-            <div class="icon mb-3">
-              <i class="bi bi-graph-up fs-1 text-danger"></i>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="card service-card h-100 text-center p-4 shadow-sm border-0">
+            <div class="icon mb-4">
+              <div class="icon-wrapper bg-warning">
+                <i class="bi bi-graph-up fs-2"></i>
+              </div>
             </div>
-            <h5 class="fw-bold">Digital Marketing</h5>
-            <p class="text-muted">
-              Membantu promosi bisnis Anda dengan strategi digital marketing terbaik.
+            <h5 class="fw-bold mb-3">Digital Marketing</h5>
+            <p class="text-muted mb-4">
+              Optimasi online dan strategi promosi agar bisnis Anda lebih dikenal luas di internet.
             </p>
+            <ul class="list-unstyled mt-3 text-start">
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>SEO optimization</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Social media management</span>
+              </li>
+              <li class="mb-3 d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Content strategy</span>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-primary me-3"></i>
+                <span>Performance analytics</span>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -211,40 +468,150 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact" class="py-5 section-bg-dark">
+  <section id="contact" class="contact py-5">
     <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Contact Us</h2>
-        <p class="text-muted">
-          Silahkan hubungi kami melalui form di bawah ini untuk pertanyaan atau kerjasama.
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="section-title mb-3">
+          <i class="bi bi-telephone me-3"></i>
+          Kontak Kami
+        </h2>
+        <p class="lead text-muted fs-5">
+          Hubungi tim DesainCoding.id untuk konsultasi gratis atau penawaran layanan
         </p>
       </div>
 
       <div class="row justify-content-center">
         
         <!-- Contact Info -->
-        <div class="col-md-4">
-          <h5 class="fw-bold">Info Contact</h5>
-          <p><i class="bi bi-geo-alt-fill text-primary"></i> Jl. Teknologi No. 123, Jakarta</p>
-          <p><i class="bi bi-telephone-fill text-primary"></i> +62 812-3456-7890</p>
-          <p><i class="bi bi-envelope-fill text-primary"></i> info@perusahaan.com</p>
+        <div class="col-lg-5 mb-5" data-aos="fade-right">
+          <div class="contact-info">
+            <h5 class="fw-bold mb-4 d-flex align-items-center">
+              <i class="bi bi-info-circle me-2"></i>
+              Info Kontak
+            </h5>
+            
+            <div class="contact-item d-flex align-items-start mb-4 p-3 bg-light rounded">
+              <div class="contact-icon me-3 mt-1">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Lokasi</h6>
+                <p class="text-muted mb-0">Bekasi, Indonesia</p>
+              </div>
+            </div>
+            
+            <div class="contact-item d-flex align-items-start mb-4 p-3 bg-light rounded">
+              <div class="contact-icon me-3 mt-1">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Telepon / WhatsApp</h6>
+                <p class="text-muted mb-0">+62 812-3456-7890</p>
+              </div>
+            </div>
+            
+            <div class="contact-item d-flex align-items-start mb-4 p-3 bg-light rounded">
+              <div class="contact-icon me-3 mt-1">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Email</h6>
+                <p class="text-muted mb-0">support@desaincoding.id</p>
+              </div>
+            </div>
+            
+            <div class="contact-item d-flex align-items-start p-3 bg-light rounded">
+              <div class="contact-icon me-3 mt-1">
+                <i class="bi bi-clock-fill"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-1">Jam Operasional</h6>
+                <p class="text-muted mb-0">Senin - Minggu: 08.00 - 17.00 WIB</p>
+              </div>
+            </div>
+
+            <div class="social-links mt-5">
+              <h6 class="fw-bold mb-3">Follow Kami</h6>
+              <div class="d-flex gap-3">
+                <a href="#" class="social-link p-3 rounded bg-light d-flex align-items-center justify-content-center">
+                  <i class="bi bi-whatsapp fs-5"></i>
+                </a>
+                <a href="#" class="social-link p-3 rounded bg-light d-flex align-items-center justify-content-center">
+                  <i class="bi bi-instagram fs-5"></i>
+                </a>
+                <a href="#" class="social-link p-3 rounded bg-light d-flex align-items-center justify-content-center">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+                <a href="#" class="social-link p-3 rounded bg-light d-flex align-items-center justify-content-center">
+                  <i class="bi bi-facebook fs-5"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Contact Form -->
-        <div class="col-md-8">
-          <form>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+          <form class="contact-form bg-light p-4 rounded">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="name" class="form-label fw-semibold">
+                  <i class="bi bi-person me-1"></i>
+                  Nama Lengkap
+                </label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="name"
+                  placeholder="Masukkan Nama Anda" 
+                  required
+                >
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label fw-semibold">
+                  <i class="bi bi-envelope me-1"></i>
+                  Email
+                </label>
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="email"
+                  placeholder="Masukkan Email Anda" 
+                  required
+                >
+              </div>
+            </div>
             <div class="mb-3">
-              <label for="name" class="form-label">Nama</label>
+              <label for="phone" class="form-label fw-semibold">
+                <i class="bi bi-phone me-1"></i>
+                Nomor Telepon
+              </label>
               <input 
-                type="text" 
+                type="tel" 
                 class="form-control" 
-                id="name"
-                placeholder="Masukkan Nama Anda" 
+                id="phone"
+                placeholder="Masukkan Nomor Telepon" 
                 required
               >
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Pesan</label>
+              <label for="subject" class="form-label fw-semibold">
+                <i class="bi bi-chat-square-text me-1"></i>
+                Subjek
+              </label>
+              <input 
+                type="text" 
+                class="form-control" 
+                id="subject"
+                placeholder="Subjek Pesan" 
+                required
+              >
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label fw-semibold">
+                <i class="bi bi-pencil me-1"></i>
+                Pesan
+              </label>
               <textarea 
                 class="form-control" 
                 id="message"
@@ -253,24 +620,100 @@
                 required
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-contact">Kirim Pesan</button>
+            <button type="submit" class="btn btn-contact btn-lg w-100 d-flex align-items-center justify-content-center">
+              <i class="bi bi-send me-2"></i>
+              Kirim Pesan
+            </button>
           </form>
         </div>
-        <!-- Google Maps -->
-        <div class="mt-4">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.655401106312!2d106.8271833147696!3d-6.175387995528229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e6e9c9b6f9%3A0xf32b0cbdc04a0!2sMonas!5e0!3m2!1sid!2sid!4v1630585678901!5m2!1sid!2sid" 
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-          </iframe>
-        </div>
-
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 class="fw-bold d-flex align-items-center mb-3">
+            <i class="bi bi-code-square me-2"></i>
+            DesainCoding.id
+          </h5>
+          <p class="text-muted">
+            Partner terpercaya untuk pengembangan website dan desain profesional. 
+            Membantu bisnis Anda tumbuh di era digital.
+          </p>
+          <div class="social-links">
+            <a href="#" class="text-light me-3">
+              <i class="bi bi-whatsapp fs-5"></i>
+            </a>
+            <a href="#" class="text-light me-3">
+              <i class="bi bi-instagram fs-5"></i>
+            </a>
+            <a href="#" class="text-light me-3">
+              <i class="bi bi-linkedin fs-5"></i>
+            </a>
+            <a href="#" class="text-light">
+              <i class="bi bi-facebook fs-5"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h6 class="fw-bold mb-3">Navigasi</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#hero" class="text-muted text-decoration-none">Beranda</a></li>
+            <li class="mb-2"><a href="#about" class="text-muted text-decoration-none">Tentang</a></li>
+            <li class="mb-2"><a href="#team" class="text-muted text-decoration-none">Tim</a></li>
+            <li class="mb-2"><a href="#services" class="text-muted text-decoration-none">Layanan</a></li>
+            <li><a href="#contact" class="text-muted text-decoration-none">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h6 class="fw-bold mb-3">Layanan</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Website Development</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">UI/UX Design</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Digital Marketing</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Branding</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 mb-4">
+          <h6 class="fw-bold mb-3">Kontak</h6>
+          <ul class="list-unstyled text-muted">
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-geo-alt me-2"></i>
+              Bekasi, Indonesia
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <i class="bi bi-telephone me-2"></i>
+              +62 812-3456-7890
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="bi bi-envelope me-2"></i>
+              support@desaincoding.id
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0 text-muted">
+            <i class="bi bi-copyright me-1"></i>
+            2024 DesainCoding.id. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-muted text-decoration-none me-3">
+            <i class="bi bi-shield-check me-1"></i>Privacy Policy
+          </a>
+          <a href="#" class="text-muted text-decoration-none">
+            <i class="bi bi-file-text me-1"></i>Terms of Service
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS -->
   <script 
@@ -278,7 +721,10 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
     crossorigin="anonymous"
   ></script>
-
+  
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
   <!-- Custom JS -->
   <script src="js/script.js"></script>
 </body>
