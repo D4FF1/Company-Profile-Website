@@ -17,7 +17,11 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous"
   />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -87,12 +91,12 @@
             DesainCoding.id membantu UMKM, startup, hingga personal brand untuk memiliki website modern,
             company profile digital, dan desain visual yang menarik agar bisnis Anda semakin dipercaya.
           </p>
-          <div class="d-flex flex-wrap gap-3 mb-4">
-            <a href="#about" class="btn btn-primary btn-lg px-4 py-2 d-flex align-items-center">
+          <div class="d-flex flex-wrap gap-3 mb-4 justify-content-start">
+            <a href="#about" class="btn btn-brown btn-lg px-4 py-2 d-flex align-items-center">
               <i class="bi bi-rocket-takeoff me-2"></i>
               Jelajahi Layanan
             </a>
-            <a href="#contact" class="btn btn-outline-primary btn-lg px-4 py-2 d-flex align-items-center">
+            <a href="#contact" class="btn btn-outline-brown btn-lg px-4 py-2 d-flex align-items-center">
               <i class="bi bi-chat-dots me-2"></i>
               Konsultasi Gratis
             </a>
@@ -122,14 +126,6 @@
               alt="Website Development" 
               onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'"
             >
-            <div class="floating-element element-1">
-              <i class="bi bi-code-slash"></i>
-            </div>
-            <div class="floating-element element-2">
-              <i class="bi bi-palette"></i>
-            </div>
-            <div class="floating-element element-3">
-              <i class="bi bi-rocket"></i>
             </div>
           </div>
         </div>
@@ -363,23 +359,25 @@
       <div class="row g-4">
         
         <!-- Service 1 -->
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="card service-card h-100 
-                type="text" 
-                class="form-control" 
-                id="subject"
-                placeholder="Subjek Pesan" 
-                requiredtext-center p-4 shadow-sm border-0">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="card service-card text-center p-4 shadow-sm border-0 h-100">
+            <!-- Icon -->
             <div class="icon mb-4">
-              <div class="icon-wrapper bg-primary">
-                <i class="bi bi-laptop fs-2"></i>
+              <div class="icon-wrapper bg-primary d-inline-flex align-items-center justify-content-center rounded-circle" style="width:60px; height:60px;">
+                <i class="bi bi-laptop fs-2 text-white"></i>
               </div>
             </div>
+
+            <!-- Title -->
             <h5 class="fw-bold mb-3">Website Company Profile</h5>
+
+            <!-- Description -->
             <p class="text-muted mb-4">
               Website profesional yang elegan dan responsif untuk memperkuat citra bisnis Anda di dunia digital.
             </p>
-            <ul class="list-unstyled mt-3 text-start">
+
+            <!-- Features list -->
+            <ul class="list-unstyled mt-3 text-start mx-auto" style="max-width: 250px;">
               <li class="mb-3 d-flex align-items-center">
                 <i class="bi bi-check-circle-fill text-primary me-3"></i>
                 <span>Desain modern & responsive</span>
@@ -674,17 +672,19 @@
       </div>
 
       <!-- Contact -->
-      <div class="col-lg-3 mb-4">
-        <h6 class="fw-bold mb-3">Kontak</h6>
+      <div class="col-lg-3 mb-4 text-start">
+        <h6 class="fw-bold mb-3 d-flex align-items-center">
+          <i class="bi bi-person-lines-fill me-2 text-brown"></i> Kontak
+        </h6>
         <ul class="list-unstyled text-secondary small">
           <li class="mb-2 d-flex align-items-center">
-            <i class="bi bi-geo-alt me-2 text-primary"></i> Bekasi, Indonesia
+            <i class="bi bi-geo-alt me-2 text-brown"></i> Bekasi, Indonesia
           </li>
           <li class="mb-2 d-flex align-items-center">
-            <i class="bi bi-telephone me-2 text-primary"></i> +62 812-3456-7890
+            <i class="bi bi-telephone me-2 text-brown"></i> +62 812-3456-7890
           </li>
           <li class="d-flex align-items-center">
-            <i class="bi bi-envelope me-2 text-primary"></i> support@desaincoding.id
+            <i class="bi bi-envelope me-2 text-brown"></i> support@desaincoding.id
           </li>
         </ul>
       </div>
